@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="questao4.js"></script>
+    <title>Questao 04</title>
+</head>
+<body>
+    <form name="preco" action="" class="preco">
+
+        <label for="valor">Valor à vista:</label>
+        <input type="text" name="valor" id="valor" /><br /><br />
+
+
+        <label for="parcelas">Selecione a quantidade de parcelas:</label>
+        <select name="parcelas" id="parcelas">
+            <option value="3">3</option>
+            <option value="5">5</option>
+        </select><br /><br />
+       
+        <label for="valortotal">Total a pagar:</label>
+        <input type="text" name="valortotal" id="valortotal" /><br /><br />
+        
+
+        <label for="prestacao">Valor da prestação:</label>
+        <input type="text" name="prestacao" id="prestacao" /><br /><br />
+        
+
+        <input type="button" value="Calcular" class="botao" onclick="calcular(document.preco.parcelas.value)" />
+    </form>
+
+    
+</body>
+</html>
